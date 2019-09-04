@@ -1,17 +1,14 @@
 <?php
-
+// クラスの作成(親クラス)
 class Human
 {
+    // プロパティの宣言
     public $name,
            $age,
            $tall,  // メートル表記
            $weight;
-           
-    public function greeting()
-    {
-        echo('こんにちは');
-        echo('<br>');
-    }
+    
+    // コンストラクタ
     public function __construct($name, $age, $tall, $weight)
     {
         $this->name = $name;
@@ -19,6 +16,13 @@ class Human
         $this->tall = $tall;
         $this->weight = $weight;
         echo('新しいニンゲンが創られた');
+        echo('<br>');
+    }
+
+    // メソッド
+    public function greeting()
+    {
+        echo('こんにちは');
         echo('<br>');
     }
     public function selfIntroduction()

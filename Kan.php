@@ -11,6 +11,10 @@ class Kan
 
     public function letCry($num)
     {
+        echo('kansanは');
+        echo($this->jail[$num]->name);
+        echo('を鳴かせようと試みた');
+        echo('<br>');
         $this->jail[$num]->cry();
     }
 }
